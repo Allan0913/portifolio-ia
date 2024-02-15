@@ -6,3 +6,4 @@
 - [ ] Apresentação
 - [ ] Projetos
 - [ ] Conhecimentos
+- [ ] Orçamento
