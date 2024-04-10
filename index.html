@@ -1,28 +1,482 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./icones/icone.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-    <title>Portfólio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA - Portfolio</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
 </head>
-<body>
-    <div class="">
-        <div id="home" class="">
-            <img  src="">
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#">
+        <h1 class="logo">LogicFlow</h1>
+      </a>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
+        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+      </button>
+
+      <nav class="navbar container">
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Ínicio</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>Sobre</a>
+          </li>
+
+          <li>
+            <a href="#noticia" class="navbar-link" data-nav-link>Notícia</a>
+          </li>
+
+        
+          <li>
+            <a href="#precisao" class="navbar-link" data-nav-link>Precisão</a>
+          </li>
+        
+
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+<!--
+
+          <div class="hero-banner">
+
+            <img src="./assets/images/absolute-image.jpg" width="800" height="864" loading="lazy" alt="Ethan's Photo"
+              class="img-cover">
+
+          </div>
+-->
+          <div class="hero-content">
+
+            <h2 class="hero-title">
+              <span>Bem vindo ao página de </span>
+              <strong>Inteligência Artificial</strong> 
+            </h2>
+
+            <p class="hero-text">
+              Aqui você vai ver notícias e aprenderá mais sobre inteligência artificial.
+            </p>
+
+            <div class="btn-group">
+              <a href="#noticia" class="btn btn-primary blue">Ir para notícias</a>
+
+              
+            </div>
+
+          </div>
+
         </div>
-        <a class="navbar-item-direita" href="#contato">CONTATO</a>
-        <a class="navbar-item-direita" href="#curiosidades">SOBRE</a>
-        <a class="navbar-item-direita" href="#sobre">CURIOSIDADES</a>
-        <a class="navbar-item-direita" href="#home">HOME</a>
-    </div>
+      </section>
 
-    <div id="Bitcoin1" class="img-fundo-1 display-container">
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/absolute-image.jpg" width="800" height="652" loading="lazy" alt="Ethan's Photo"
+              class="img-cover">
+
+
+
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">Teste</p>
+
+            <h2 class="h2 section-title">Lorem ipsum dolor sit amet.</h2>
+
+            <p class="section-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, labore numquam laboriosam voluptate odio atque id adipisci deleniti aut voluptatem!
+            </p>
+
+            <p class="section-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam explicabo quisquam ex nulla officiis corporis.
+            </p>
+
+            <a href="#portfolio" class="btn btn-primary blue">Ver as Nóticias</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #NOTICIA
+      -->
+
+      <section class="section blog" id="noticia">
+        <div class="container">
+
+          <p class="section-subtitle">Notícias</p>
+
+          <h2 class="h2 section-title">Veja sobre as últimas notícias</h2>
+
+          <p class="section-text">
+            Aqui você verá últimas noticías sobre inteligência artificial e aprofundar sobre o universo de IA.
+          </p>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="https://sbtnews.sbt.com.br/noticia/tecnologia/inteligencia-artificial-pode-virar-ameaca-de-extincao-para-humanidade">
+                    <img src="./assets/images/blog-1.jpg" width="1181" height="843" loading="lazy"
+                      alt="Inteligência artificial pode virar ameaça de extinção para humanidade" class="img-cover">
+                  </a>
+                </figure>
+
+                <a href="https://sbtnews.sbt.com.br/noticia/tecnologia/inteligencia-artificial-pode-virar-ameaca-de-extincao-para-humanidade" class="card-tag">SBT news</a>
+
+                <h3 class="card-title">
+                  <a href="https://sbtnews.sbt.com.br/noticia/tecnologia/inteligencia-artificial-pode-virar-ameaca-de-extincao-para-humanidade">Inteligência artificial pode virar "ameaça de extinção" para humanidade</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="https://www.infomoney.com.br/business/nvidia-anuncia-tecnologias-para-novas-geracoes-de-ia-generativa/">
+                    <img src="./assets/images/blog-2.jpg" width="1181" height="843" loading="lazy"
+                      alt="Nvidia anuncia tecnologias para novas gerações de IA generativa" class="img-cover">
+                  </a>
+                </figure>
+
+                <a href="https://www.infomoney.com.br/business/nvidia-anuncia-tecnologias-para-novas-geracoes-de-ia-generativa/" class="card-tag">InfoMoney</a>
+
+                <h3 class="card-title">
+                  <a href="https://www.infomoney.com.br/business/nvidia-anuncia-tecnologias-para-novas-geracoes-de-ia-generativa/">Nvidia anuncia tecnologias para novas gerações de IA generativa</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="https://www.correiobraziliense.com.br/politica/2024/03/6819910-inteligencia-artificial-sem-regras-desafia-a-justica-eleitoral.html">
+                    <img src="./assets/images/blog-3.jpg" width="1181" height="843" loading="lazy"
+                      alt="Inteligência artificial sem regras desafia a Justiça Eleitoral" class="img-cover">
+                  </a>
+                </figure>
+
+                <a href="https://www.correiobraziliense.com.br/politica/2024/03/6819910-inteligencia-artificial-sem-regras-desafia-a-justica-eleitoral.html" class="card-tag">Correio Braziliense</a>
+
+                <h3 class="card-title">
+                  <a href="https://www.correiobraziliense.com.br/politica/2024/03/6819910-inteligencia-artificial-sem-regras-desafia-a-justica-eleitoral.html">Inteligência artificial sem regras desafia a Justiça Eleitoral</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="https://exame.com/inteligencia-artificial/5-novidades-importantes-sobre-inteligencia-artificial-que-ocorreram-nesta-semana-2/">
+                    <img src="./assets/images/blog-1.jpg" width="1181" height="843" loading="lazy"
+                      alt="5 novidades importantes sobre inteligência artificial que ocorreram nesta semana" class="img-cover">
+                  </a>
+                </figure>
+
+                <a href="https://exame.com/inteligencia-artificial/5-novidades-importantes-sobre-inteligencia-artificial-que-ocorreram-nesta-semana-2/" class="card-tag">Exame</a>
+
+                <h3 class="card-title">
+                  <a href="https://exame.com/inteligencia-artificial/5-novidades-importantes-sobre-inteligencia-artificial-que-ocorreram-nesta-semana-2/">5 novidades importantes sobre inteligência artificial que ocorreram nesta semana</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="https://www.cnnbrasil.com.br/tecnologia/pesquisadores-da-apple-divulgam-novidade-de-inteligencia-artificial/">
+                    <img src="./assets/images/blog-2.jpg" width="1181" height="843" loading="lazy"
+                      alt="Pesquisadores da Apple divulgam novidade de Inteligência Artificial" class="img-cover">
+                  </a>
+                </figure>
+
+                <a href="https://www.cnnbrasil.com.br/tecnologia/pesquisadores-da-apple-divulgam-novidade-de-inteligencia-artificial/" class="card-tag">CNN Brasil</a>
+
+                <h3 class="card-title">
+                  <a href="https://www.cnnbrasil.com.br/tecnologia/pesquisadores-da-apple-divulgam-novidade-de-inteligencia-artificial/">Pesquisadores da Apple divulgam novidade de Inteligência Artificial</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="https://ojornalextra.com.br/noticias/agencia-estado/2024/03/3226-youtube-vai-obrigar-usuarios-a-identificar-videos-feitos-com-inteligencia-artificial">
+                    <img src="./assets/images/blog-3.jpg" width="1181" height="843" loading="lazy"
+                      alt="YouTube vai obrigar usuários a identificar vídeos feitos com inteligência artificial" class="img-cover">
+                  </a>
+                </figure>
+
+                <a href="https://ojornalextra.com.br/noticias/agencia-estado/2024/03/3226-youtube-vai-obrigar-usuarios-a-identificar-videos-feitos-com-inteligencia-artificial" class="card-tag">Jornal Extra de Alagoas</a>
+
+                <h3 class="card-title">
+                  <a href="https://ojornalextra.com.br/noticias/agencia-estado/2024/03/3226-youtube-vai-obrigar-usuarios-a-identificar-videos-feitos-com-inteligencia-artificial">YouTube vai obrigar usuários a identificar vídeos feitos com inteligência artificial</a>
+                </h3>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+ <!-- 
+    - #PRECISAO
+  -->
+  
+  <section class="section skills" id="precisao">
+    <div class="container">
+
+      <p class="section-subtitle">Precisão do chatbot</p>
+
+      <h2 class="h2 section-title">Precisão do chatGPT 4</h2>
+
+      <p class="section-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque voluptas repellat odit! Officia, adipisci laborum.
+      </p>
+
+      <ul class="skills-list">
+
+        <li class="skills-item">
+          <div class="wrapper" style="width: 80%">
+            <h3 class=" skills-title">Matemática</h3>
+
+            <data class="skills-data" value="80">80%</data>
+          </div>
+
+          <div class="skills-progress-box">
+            <div class="skills-progress" style="width: 80%"></div>
+          </div>
+        </li>
+
+        <li class="skills-item">
+          <div class="wrapper" style="width: 90%">
+            <h3 class="skills-title">Gramática & Literatura</h3>
+
+            <data class="skills-data" value="90">90%</data>
+          </div>
+
+          <div class="skills-progress-box">
+            <div class="skills-progress" style="width: 90%"></div>
+          </div>
+        </li>
+
+        <li class="skills-item">
+          <div class="wrapper" style="width: 75%">
+            <h3 class="skills-title">Física</h3>
+
+            <data class="skills-data" value="75">75%</data>
+          </div>
+
+          <div class="skills-progress-box">
+            <div class="skills-progress" style="width: 75%"></div>
+          </div>
+        </li>
+
+        <li class="skills-item">
+          <div class="wrapper" style="width: 80%">
+            <h3 class="skills-title">Programação</h3>
+
+            <data class="skills-data" value="80">80%</data>
+          </div>
+
+          <div class="skills-progress-box">
+            <div class="skills-progress" style="width: 80%"></div>
+          </div>
+        </li>
+
+        <li class="skills-item">
+          <div class="wrapper" style="width: 85%">
+            <h3 class="skills-title">psicologia</h3>
+
+            <data class="skills-data" value="85">85%</data>
+          </div>
+
+          <div class="skills-progress-box">
+            <div class="skills-progress" style="width: 85%"></div>
+          </div>
+        </li>
+
+        <li class="skills-item">
+          <div class="wrapper" style="width: 75%">
+            <h3 class="skills-title">Química</h3>
+
+            <data class="skills-data" value="75">75%</data>
+          </div>
+
+          <div class="skills-progress-box">
+            <div class="skills-progress" style="width: 75%"></div>
+          </div>
+        </li>
+
+      </ul>
 
     </div>
+  </section>
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" id="contact">
+        <div class="container">
+
+          <div class="contact-card">
+
+            <p class="card-subtitle">Me mande sua opinião</p>
+
+            <h2 class="h2 section-title">Me conte o que você achou do nosso site</h2>
+
+            <div class="wrapper">
+
+              <form action="" class="contact-form" id="contactForm">
+                <label for="">Seu nome</label>
+                <input type="text" name="name" placeholder="" required class="contact-input">
+                
+                <div class="">
+                  <label for="">Gostou da página?</label>
+                  <br>
+                  <div>
+                    <input type="radio" name="prototipo" id="prototipo_sim">
+                    <label for="prototipo_sim">Sim</label>
+                    <br>
+                    <input type="radio" name="prototipo" id="prototipo_nao">
+                    <label for="prototipo_nao">Não</label>
+                  </div>
+                </div>
+                <br>
+                
+                <label for="nota">Nota de 0 a 10 sobre o site</label>
+                <label for="nota">Nota:</label>
+                <input type="range" min="1" max="10" id="nota">
+                <br>
+                <label for="">Mande a sua opinião:</label>
+                <textarea name="message" placeholder="" required class="contact-input"></textarea>
+              
+                <button type="submit" class="btn-submit">Enviar mensagem</button>
+              </form>
+              
+
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+
+
+    </div>
+  </footer>
+
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
